@@ -1,0 +1,62 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Generation {
+  id          String   @id @default(cuid())
+
+  // --- User identification ---
+  fingerprint String
+  ip          String
+  userAgent   String?
+  referer     String?
+  country     String?
+  acceptLang  String?
+
+  // --- Request ---
+  topic       String
+  length      Int
+  keywords    String?
+
+  // --- Response ---
+  status      String   @default("pending")
+  result      String?  @db.Text
+  resultLength Int?
+  plainLength  Int?
+  errorMessage String?
+
+  // --- API Metrics ---
+  model         String?
+  inputTokens   Int?
+  outputTokens  Int?
+  totalTokens   Int?
+  costUsd       Float?
+  latencyMs     Int?
+  stopReason    String?
+  promptLength  Int?
+
+  // --- Timestamps ---
+  createdAt   DateTime @default(now())
+  completedAt DateTime?
+
+  @@index([fingerprint, createdAt])
+  @@index([ip, createdAt])
+  @@index([status])
+  @@index([createdAt])
+}
+
+model UserLimitOverride {
+  id          String   @id @default(cuid())
+  ip          String   @unique
+  bonusToday  Int      @default(0)
+  note        String?
+  updatedAt   DateTime @updatedAt
+  createdAt   DateTime @default(now())
+
+  @@index([ip])
+}

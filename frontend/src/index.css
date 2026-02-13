@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-gray-50 text-gray-900 dark:bg-slate-950 dark:text-gray-100;
+    font-family: "Inter", system-ui, -apple-system, sans-serif;
+  }
+
+  ::selection {
+    @apply bg-brand-500/20 text-brand-900 dark:bg-brand-400/30 dark:text-brand-100;
+  }
+}
+
+@layer components {
+  /* Generator result HTML styling */
+  .generated-html h1 {
+    @apply text-2xl font-bold mb-4 text-gray-900 dark:text-white;
+  }
+
+  .generated-html h2 {
+    @apply text-xl font-semibold mt-6 mb-3 text-gray-800 dark:text-gray-100;
+  }
+
+  .generated-html h3 {
+    @apply text-lg font-semibold mt-4 mb-2 text-gray-700 dark:text-gray-200;
+  }
+
+  .generated-html p {
+    @apply mb-4 leading-relaxed text-gray-700 dark:text-gray-300;
+  }
+
+  .generated-html ul,
+  .generated-html ol {
+    @apply mb-4 ml-6 space-y-1;
+  }
+
+  .generated-html ul {
+    @apply list-disc;
+  }
+
+  .generated-html ol {
+    @apply list-decimal;
+  }
+
+  .generated-html li {
+    @apply text-gray-700 dark:text-gray-300 leading-relaxed;
+  }
+
+  .generated-html strong {
+    @apply font-semibold text-gray-900 dark:text-white;
+  }
+
+  .generated-html em {
+    @apply italic;
+  }
+
+  .generated-html table {
+    @apply w-full mb-4 border-collapse rounded-lg overflow-hidden text-sm;
+  }
+
+  .generated-html thead {
+    @apply bg-brand-50 dark:bg-brand-900/30;
+  }
+
+  .generated-html th {
+    @apply px-4 py-3 text-left font-semibold text-brand-800 dark:text-brand-200 border-b border-brand-100 dark:border-brand-800;
+  }
+
+  .generated-html td {
+    @apply px-4 py-3 border-b border-gray-100 dark:border-slate-700/50 text-gray-700 dark:text-gray-300;
+  }
+
+  .generated-html tbody tr:hover {
+    @apply bg-gray-50 dark:bg-slate-800/30;
+  }
+
+  .generated-html a {
+    @apply text-brand-600 dark:text-brand-400 underline hover:text-brand-700 dark:hover:text-brand-300;
+  }
+
+  /* Loading shimmer */
+  .shimmer {
+    background: linear-gradient(
+      90deg,
+      transparent 25%,
+      rgba(99, 102, 241, 0.08) 50%,
+      transparent 75%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 2s infinite;
+  }
+}
+
+/* Smooth transitions */
+* {
+  @apply transition-colors duration-200;
+}
+
+/* Remove transition from animated elements */
+.no-transition {
+  transition: none !important;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-300 dark:bg-slate-600 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-400 dark:bg-slate-500;
+}
