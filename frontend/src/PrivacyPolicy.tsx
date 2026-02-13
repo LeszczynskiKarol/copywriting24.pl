@@ -58,13 +58,13 @@ export default function PrivacyPolicy() {
               1. Administrator danych
             </h2>
             <p>
-              Administratorem serwisu Copywriting24.pl jest Karol Leszczyński,
-              prowadzący działalność pod adresem e-mail:{" "}
+              Administratorem serwisu Ecopywriting.pl jest Karol Leszczyński,
+              NIP 9562203948, 86-221 Papowo Biskupie 119/18, e-mail:{" "}
               <a
-                href="mailto:kontakt@copywriting24.pl"
+                href="mailto:kontakt@ecopywriting.pl"
                 className="text-brand-600 dark:text-brand-400 hover:underline"
               >
-                kontakt@copywriting24.pl
+                kontakt@ecopywriting.pl
               </a>
               . Administrator odpowiada za przetwarzanie danych osobowych
               zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE)
@@ -371,10 +371,10 @@ export default function PrivacyPolicy() {
             <p className="mt-3">
               W celu realizacji powyższych praw prosimy o kontakt na adres:{" "}
               <a
-                href="mailto:kontakt@copywriting24.pl"
+                href="mailto:kontakt@ecopywriting.pl"
                 className="text-brand-600 dark:text-brand-400 hover:underline"
               >
-                kontakt@copywriting24.pl
+                kontakt@ecopywriting.pl
               </a>
               .
             </p>
@@ -440,10 +440,10 @@ export default function PrivacyPolicy() {
             <p className="mt-2">
               E-mail:{" "}
               <a
-                href="mailto:kontakt@copywriting24.pl"
+                href="mailto:kontakt@copywriting.pl"
                 className="text-brand-600 dark:text-brand-400 hover:underline"
               >
-                kontakt@copywriting24.pl
+                kontakt@ecopywriting.pl
               </a>
             </p>
           </section>
