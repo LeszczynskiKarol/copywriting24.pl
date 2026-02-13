@@ -1247,7 +1247,12 @@ function Footer() {
           </div>
 
           <div className="flex items-center gap-4 text-sm text-gray-500 dark:text-gray-400">
-            <span>Generator treści AI</span>
+            <a
+              href="/polityka-prywatnosci"
+              className="hover:text-brand-600 dark:hover:text-brand-400 transition-colors"
+            >
+              Polityka prywatności
+            </a>
             <span>・</span>
             <CookieSettingsButton />
           </div>
