@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback, useRef } from "react";
-
+import { CookieSettingsButton } from "./CookieConsent";
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 // 🔑 Browser fingerprint (simple but effective)
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -1249,7 +1249,7 @@ function Footer() {
           <div className="flex items-center gap-4 text-sm text-gray-500 dark:text-gray-400">
             <span>Generator treści AI</span>
             <span>・</span>
-            <span>Kreator tekstów za darmo</span>
+            <CookieSettingsButton />
           </div>
         </div>
 
