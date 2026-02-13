@@ -1046,7 +1046,7 @@ function SeoContent() {
             </p>
             <ul className="space-y-2 text-gray-600 dark:text-gray-400">
               {[
-                "Teksty nawet ponad 50 stron (50 000+ znaków)",
+                "Teksty nawet ponad 50 stron (300 000+ znaków)",
                 "Zaawansowany model Claude Sonnet — wyższa jakość i spójność",
                 "Wbudowany automatyczny research online dla każdego tematu",
                 "Obsługa 8 języków (polski, angielski, niemiecki, hiszpański, francuski, włoski, ukraiński, rosyjski)",
@@ -1104,7 +1104,7 @@ function FAQ() {
     },
     {
       q: "Jak generować teksty dłuższe niż 3000 znaków?",
-      a: "Dłuższe teksty (do 50 000+ znaków, czyli ponad 50 stron) możesz generować w Smart-Copy.ai — profesjonalnej platformie z zaawansowanym modelem AI Claude Sonnet, automatycznym researchem online, obsługą 8 języków i pełną optymalizacją SEO.",
+      a: "Dłuższe teksty (do 300 000+ znaków, czyli ponad 50 stron) możesz generować w Smart-Copy.ai — profesjonalnej platformie z zaawansowanym modelem AI Claude Sonnet, automatycznym researchem online, obsługą 8 języków i pełną optymalizacją SEO.",
     },
     {
       q: "Czym się różni Copywriting24 od Smart-Copy.ai?",
