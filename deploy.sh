@@ -19,5 +19,3 @@ sudo systemctl reload nginx
 echo "========================================="
 echo "Deploy complete!"
 echo "========================================="
-EOF
-chmod +x /var/www/copywriting24/deploy.sh
